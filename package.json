@@ -1,6 +1,6 @@
 {
   "name": "flv-h265",
-  "version": "1.6.2",
+  "version": "1.6.5",
   "description": "HTML5 FLV Player",
   "main": "./dist/flv.js",
   "types": "./d.ts/flv.d.ts",
@@ -9,10 +9,11 @@
     "url": "https://github.com/zhuguibiao/flv.js"
   },
   "keywords": [
-    "html5",
     "flv",
+    "h265",
+    "hevc",
     "mse",
-    "javascript"
+    "flv h265"
   ],
   "scripts": {
     "build": "webpack --mode=production --progress",
