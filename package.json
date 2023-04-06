@@ -22,22 +22,28 @@
     "dtslint": "dtslint types"
   },
   "dependencies": {
-    "es6-promise": "^4.2.8",
+    "es6-promise": "^4.2.5",
     "webworkify-webpack": "^2.1.5"
   },
   "devDependencies": {
-    "@types/node": "^16.3.3",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
-    "browser-sync": "^2.27.4",
-    "eslint": "^7.30.0",
-    "exports-loader": "^3.0.0",
-    "source-map-loader": "^3.0.0",
-    "terser-webpack-plugin": "^5.1.4",
-    "ts-loader": "^9.2.3",
-    "typescript": "^4.3.5",
-    "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2"
+    "@types/node": "^10.12.18",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "browser-sync": "^2.26.10",
+    "eslint": "^5.15.0",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^3.0.1",
+    "source-map-loader": "^0.2.4",
+    "terser-webpack-plugin": "^1.2.3",
+    "ts-loader": "^5.3.2",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^4.4.0",
+    "ws": ">=7.4.6",
+    "xmlhttprequest-ssl": ">=1.6.2",
+    "loader-utils": ">=1.4.1",
+    "socket.io-parser": ">=3.3.3",
+    "minimist": ">=1.2.6"
   },
   "author": "zgb<zhuguibiao1994@gmail.com>",
   "license": "Apache-2.0"
