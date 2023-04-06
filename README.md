@@ -23,7 +23,7 @@ flv.js works by transmuxing FLV file stream into ISO BMFF (Fragmented MP4) segme
 
 ## Installation
 ```bash
-npm install --save h265-flv
+npm install --save flv-h265
 ```
 
 ## Build
