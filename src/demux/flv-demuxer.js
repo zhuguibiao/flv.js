@@ -349,7 +349,7 @@ class FLVDemuxer {
                     this._parseVideoData(chunk, dataOffset, dataSize, timestamp, byteStart + offset);
                     break;
                 case 18:  // ScriptDataObject
-                    this._parseScriptData(chunk, dataOffset, dataSize);
+                    this._parseScriptData(chunk, dataOffset, dataSize, timestamp);
                     break;
             }
 
@@ -371,7 +371,7 @@ class FLVDemuxer {
         return offset;  // consumed bytes, just equals latest offset index
     }
 
-    _parseScriptData(arrayBuffer, dataOffset, dataSize) {
+    _parseScriptData(arrayBuffer, dataOffset, dataSize, timestamp) {
         let scriptData = AMF.parseScriptData(arrayBuffer, dataOffset, dataSize);
 
         if (scriptData.hasOwnProperty('onMetaData')) {
@@ -451,7 +451,8 @@ class FLVDemuxer {
 
         if (Object.keys(scriptData).length > 0) {
             if (this._onScriptDataArrived) {
-                this._onScriptDataArrived(Object.assign({}, scriptData));
+                // this._onScriptDataArrived(Object.assign({}, scriptData));
+                this._onScriptDataArrived(Object.assign({}, scriptData,{ timestamp }));
             }
         }
     }
