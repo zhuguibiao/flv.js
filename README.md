@@ -11,7 +11,7 @@ flv.js works by transmuxing FLV file stream into ISO BMFF (Fragmented MP4) segme
 [Media Source Extensions]: https://w3c.github.io/media-source/
 
 ## HEVC(H265) Chrome Support
-[enable-chromium-hevc-hardware-decoding](https://github.com/StaZhu/enable-chromium-hevc-hardware-decoding#whats-the-gpu-requirement)
+[enable-chromium-hevc-hardware-decoding](https://github.com/StaZhu/enable-chromium-hevc-hardware-decoding)
 
 ## Demo
 [http://zhuguibiao.github.io/flv.js](http://zhuguibiao.github.io/flv.js)
