@@ -1,5 +1,5 @@
 
-flv.js  [![npm](https://img.shields.io/npm/v/flv-h265.svg?style=flat)](https://www.npmjs.com/package/flv-h265)
+flv-h265  [![npm](https://img.shields.io/npm/v/flv-h265.svg?style=flat)](https://www.npmjs.com/package/flv-h265)
 ======
 An HTML5 Flash Video (FLV) Player written in pure JavaScript without Flash. LONG LIVE FLV!
 
