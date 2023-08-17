@@ -13,8 +13,8 @@ flv.js works by transmuxing FLV file stream into ISO BMFF (Fragmented MP4) segme
 ## HEVC FLV expand
 [《video_file_format_spec_v10_1》](https://rtmp.veriskope.com/pdf/video_file_format_spec_v10.pdf) **VIDEODATA** [H265支持扩展](https://github.com/ksvc/FFmpeg/wiki)
 
-## HEVC(H265) Chrome Support
 [chromium-hevc-hardware-decoding](https://github.com/StaZhu/enable-chromium-hevc-hardware-decoding) （chromium硬解码支持）
+
 [h265 support test](https://ott.dolby.com/codec_test/index.html)（h265电脑支持测试）
 
 ## Demo
