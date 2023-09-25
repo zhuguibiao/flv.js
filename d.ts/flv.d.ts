@@ -66,6 +66,55 @@ declare namespace FlvJs {
         isLive?: boolean;
 
         /**
+         * @desc Chasing the live stream latency caused by the internal buffer in HTMLMediaElement
+         *       `isLive` should also be set to `true`
+         * @defaultvalue false
+         */
+        liveBufferLatencyChasing?: boolean;
+
+        /**
+         * @desc Maximum acceptable buffer latency in HTMLMediaElement, in seconds
+         *       Effective only if `isLive: true` and `liveBufferLatencyChasing: true`
+         * @defaultvalue 1.5
+         */
+        liveBufferLatencyMaxLatency?: number;
+
+        /**
+         * @desc Minimum buffer latency to be keeped in HTMLMediaElement, in seconds
+         *       Effective only if `isLive: true` and `liveBufferLatencyChasing: true`
+         * @defaultvalue 0.5
+         */
+        liveBufferLatencyMinRemain?: number;
+        
+        /**
+         * @desc Chasing the live stream latency caused by the internal buffer in  HTMLMediaElement by changing the playbackRate.
+         *       isLive should also be set to true
+         * @defaultvalue false
+         */
+        liveSync?: boolean;
+
+        /**
+         * @desc Maximum acceptable buffer latency in HTMLMediaElement, in seconds. 
+         *       Effective only if `isLive: true` and `liveSync: true`
+         * @defaultvalue 1.2
+         */
+        liveSyncMaxLatency: 1.2,
+
+        /**
+         * @desc Buffer latency Target, do nothing, keep playbackRate. 
+         *       Effective only if `isLive: true` and `liveSync: true`
+         * @defaultvalue 0.8
+         */
+        liveSyncTargetLatency: 0.8,
+
+        /**
+         * @desc PlaybackRate limited between [1, 2] will be used for latency chasing. 
+         *       Effective only if `isLive: true` and `liveSync: true`
+         * @defaultvalue 1.2
+         */
+        liveSyncPlaybackRate: 1.2,
+
+        /**
          * @desc Abort the http connection if there's enough data for playback.
          * @defaultvalue true
          */
