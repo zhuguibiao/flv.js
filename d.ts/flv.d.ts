@@ -98,21 +98,21 @@ declare namespace FlvJs {
          *       Effective only if `isLive: true` and `liveSync: true`
          * @defaultvalue 1.2
          */
-        liveSyncMaxLatency: 1.2,
+        liveSyncMaxLatency?: number;
 
         /**
          * @desc Buffer latency Target, do nothing, keep playbackRate. 
          *       Effective only if `isLive: true` and `liveSync: true`
          * @defaultvalue 0.8
          */
-        liveSyncTargetLatency: 0.8,
+        liveSyncTargetLatency?: number;
 
         /**
          * @desc PlaybackRate limited between [1, 2] will be used for latency chasing. 
          *       Effective only if `isLive: true` and `liveSync: true`
          * @defaultvalue 1.2
          */
-        liveSyncPlaybackRate: 1.2,
+        liveSyncPlaybackRate?: number;
 
         /**
          * @desc Abort the http connection if there's enough data for playback.
